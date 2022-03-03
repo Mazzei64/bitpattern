@@ -1,6 +1,7 @@
-all: bit
+all: bitpattern
 
 run: bitpattern
 	clear ; ./test
-bit: bit.c
+
+bitpattern: bitpattern.c
 	cc -o $@ $^ -lm
